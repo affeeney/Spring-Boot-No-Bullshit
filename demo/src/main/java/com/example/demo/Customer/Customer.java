@@ -3,6 +3,8 @@ package com.example.demo.Customer;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Table(name="customer")
 @Data
@@ -20,9 +22,14 @@ public class Customer {
     @Column(name = "last_name")
     private String lastName;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "address_id")
-    private Address address;
+    @ManyToMany
+    @JoinTable(
+            name = "customer_address",
+            joinColumns = @JoinColumn(name = "customer_id"),
+            inverseJoinColumns = @JoinColumn(name = "address_id")
+
+    )
+    private List<Address> addresses;
 }
 
 
