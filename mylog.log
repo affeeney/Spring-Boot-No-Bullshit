@@ -39,3 +39,6 @@ This generated password is for development use only. Your security configuration
 2025-05-26T10:41:07.342-04:00  INFO 20592 --- [NoBSSpringBoot] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-05-26T10:41:07.343-04:00  INFO 20592 --- [NoBSSpringBoot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-05-26T10:41:07.344-04:00  INFO 20592 --- [NoBSSpringBoot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-26T12:56:29.015-04:00  INFO 20592 --- [NoBSSpringBoot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26T12:56:29.034-04:00  INFO 20592 --- [NoBSSpringBoot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-26T12:56:29.042-04:00  INFO 20592 --- [NoBSSpringBoot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
